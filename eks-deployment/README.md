@@ -5,10 +5,10 @@ Prerequisites
 - AWS CLI should be configured with appropriate credentials.
 - Ensure you have Kubectl installed
 
-- Ensure you have set the below environment variables
-export AWS_ACCESS_KEY_ID="<access_key>"
+- Ensure you have set the following environment variables
+{ export AWS_ACCESS_KEY_ID="<access_key>"
 export AWS_SECRET_ACCESS_KEY="<secret_key>"
-export AWS_DEFAULT_REGION=<region>
+export AWS_DEFAULT_REGION=<region> }
 
 # Steps
 
