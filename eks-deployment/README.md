@@ -13,24 +13,24 @@ export AWS_DEFAULT_REGION=<region> }
 # Steps
 
 1) Clone the GitHub Repository
-First, clone the repository locally.
+ - First, clone the repository locally.
 
 2) Initialize Terraform
-Navigate to the directory containing the Terraform files.
-Run terraform init to initialize the Terraform project. This command downloads the necessary plugins and modules.
+- Navigate to the directory containing the Terraform files.
+- Run terraform init to initialize the Terraform project. This command downloads the necessary plugins and modules.
 
 3) Apply the Configuration
-Run terraform plan to see the execution plan and verify everything is set up correctly.
-Execute terraform apply to create the resources on AWS.
+- Run terraform plan to see the execution plan and verify everything is set up correctly.
+- Execute terraform apply to create the resources on AWS.
 
 4) Verify the Cluster
-Once the process is complete, use AWS CLI or AWS Management Console to verify that the EKS cluster is up and running.
+- Once the process is complete, use AWS CLI or AWS Management Console to verify that the EKS cluster is up and running.
 
 5) Install Cluster Autoscaler
-Run terraform output and get the ARN of the IAM Role created and replace it in cluster-autoscaler.yaml service account section appropriately.
+- Run terraform output and get the ARN of the IAM Role created and replace it in cluster-autoscaler.yaml service account section appropriately.
 
 Post-Deployment
-You can use "aws eks --region region-code update-kubeconfig --name cluster_name" to configure kubeconfig file so you can connect to the EKS cluster.
+- You can use "aws eks --region region-code update-kubeconfig --name cluster_name" to configure kubeconfig file so you can connect to the EKS cluster.
 
 Notes
 Ensure all Terraform files are correctly configured before running terraform apply.
