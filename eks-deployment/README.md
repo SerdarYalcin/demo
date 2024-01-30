@@ -33,3 +33,12 @@ Post-Deployment
 Notes:
 Ensure all Terraform files are correctly configured before running terraform apply.
 Review the Terraform plan output carefully to understand the changes that will be made.
+
+# Possible Improvements
+1) Advanced Networking: Consider using AWS Transit Gateway for simplified network architecture, especially if integrating with multiple VPCs or on-premises networks.
+Implement more granular network policies within Kubernetes to control pod-to-pod communication and enhance security.
+2) Security Enhancements: Introduce additional IAM roles for different levels of access, ensuring adherence to the principle of least privilege.
+Integrate AWS Key Management Service (KMS) for encryption of data at rest within the EKS cluster.
+3) Cost Optimization: Review the instance types and sizes used in the node groups for potential optimization. Consider using a mix of On-Demand and Spot Instances for cost savings.
+4) Logging and Monitoring: Enable control plane components logging. Install an observability agent to get logs, metrics, and traces(e.g Amazon CloudWatch Observability to get logs and metrics.)
+5) Storage Optimization: Evaluate the use of different storage classes in Kubernetes. For instance, you may consider Amazon EFS for persistent and shared storage requirements.
