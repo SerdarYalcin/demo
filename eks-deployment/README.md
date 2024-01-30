@@ -1,4 +1,4 @@
-# Instructions for Deploying EKS Infrastructure Using Terraform
+![image](https://github.com/SerdarYalcin/demo/assets/70317458/f0075cfb-5cb9-4bfe-a133-144577d5d74e)# Instructions for Deploying EKS Infrastructure Using Terraform
 
 Prerequisites
 - Ensure you have Terraform installed.
@@ -25,6 +25,9 @@ Execute terraform apply to create the resources on AWS.
 
 4) Verify the Cluster
 Once the process is complete, use AWS CLI or AWS Management Console to verify that the EKS cluster is up and running.
+
+5) Install Cluster Autoscaler
+Run terraform output and get the ARN of the IAM Role created and replace it in cluster-autoscaler.yaml service account section appropriately.
 
 Post-Deployment
 You can use "aws eks --region region-code update-kubeconfig --name cluster_name" to configure kubeconfig file so you can connect to the EKS cluster.
