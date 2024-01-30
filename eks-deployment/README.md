@@ -1,4 +1,4 @@
-Prerequisites
+# Prerequisites
 - Ensure you have Terraform installed.
 - AWS CLI should be configured with appropriate credentials.
 - Ensure you have Kubectl installed
