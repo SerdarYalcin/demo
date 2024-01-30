@@ -1,11 +1,11 @@
 # Instructions for Deploying EKS Infrastructure Using Terraform
 
 Prerequisites
-Ensure you have Terraform installed.
-AWS CLI should be configured with appropriate credentials.
-Ensure you have Kubectl installed
+- Ensure you have Terraform installed.
+- AWS CLI should be configured with appropriate credentials.
+- Ensure you have Kubectl installed
 
-Ensure you have set the below environment variables
+- Ensure you have set the below environment variables
 export AWS_ACCESS_KEY_ID="<access_key>"
 export AWS_SECRET_ACCESS_KEY="<secret_key>"
 export AWS_DEFAULT_REGION=<region>
