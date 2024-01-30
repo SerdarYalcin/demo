@@ -1,5 +1,3 @@
-![image](https://github.com/SerdarYalcin/demo/assets/70317458/f0075cfb-5cb9-4bfe-a133-144577d5d74e)# Instructions for Deploying EKS Infrastructure Using Terraform
-
 Prerequisites
 - Ensure you have Terraform installed.
 - AWS CLI should be configured with appropriate credentials.
@@ -32,6 +30,6 @@ export AWS_DEFAULT_REGION=<region> }
 Post-Deployment
 - You can use "aws eks --region region-code update-kubeconfig --name cluster_name" to configure kubeconfig file so you can connect to the EKS cluster.
 
-Notes
+Notes:
 Ensure all Terraform files are correctly configured before running terraform apply.
 Review the Terraform plan output carefully to understand the changes that will be made.
