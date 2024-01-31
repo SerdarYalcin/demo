@@ -10,7 +10,7 @@
 - First, clone the repository locally.
 2) Initialize Terraform
 - Navigate to the directory containing the Terraform files.
-3) Run terraform init to initialize the Terraform project.
+- Run terraform init to initialize the Terraform project.
 - This command downloads the necessary plugins and modules.
 4) Apply the Configuration
 - Run terraform plan to see the execution plan and verify everything is set up correctly.
