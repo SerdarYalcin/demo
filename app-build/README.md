@@ -31,5 +31,5 @@ Consider using a more powerful build environment if your build times are longer 
 
 - Monitoring and Alerts: Set up monitoring and alerts for your CI pipeline. This includes monitoring the health of the CodeBuild process, the status of builds, and any failures.
   
-- K8s Manifest File Update: Use the appropriate commands to update the k8s manifest file with the newly created tag from the buildspec.yaml file. For example: sed -i 's@CONTAINER_IMAGE@'"$REPOSITORY_URI:$TAG"'@' hello-k8s.yml
+- K8s Manifest File Update: Use the appropriate commands to update the k8s manifest file with the newly created tag from the buildspec.yml file. For example: sed -i 's@CONTAINER_IMAGE@'"$REPOSITORY_URI:$TAG"'@' hello-k8s.yml
 
