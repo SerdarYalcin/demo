@@ -30,3 +30,6 @@ Consider using a more powerful build environment if your build times are longer 
 - Automated Testing: If not already implemented, integrate automated testing in your build process. This ensures that every build is tested and reduces the likelihood of bugs making it into production.
 
 - Monitoring and Alerts: Set up monitoring and alerts for your CI pipeline. This includes monitoring the health of the CodeBuild process, the status of builds, and any failures.
+  
+- K8s Manifest File Update: Use the appropriate commands to update the k8s manifest file with the newly created tag from the buildspec.yaml file. For example: sed -i 's@CONTAINER_IMAGE@'"$REPOSITORY_URI:$TAG"'@' hello-k8s.yml
+
