@@ -10,10 +10,10 @@ These instructions will help you set up and run a copy of the project on your lo
 
 #######KS Deployment##########
 ![image](https://github.com/SerdarYalcin/demo/assets/70317458/9ef80b9e-0316-424a-a25a-f85603d959b7)
-#################################
+
 #########Docker Image Build############
 ![image](https://github.com/SerdarYalcin/demo/assets/70317458/4a7e6a7d-900f-49c3-a6f5-3f496a919d5e)
-#########################
+
 ###Application Deployment####
 ![image](https://github.com/SerdarYalcin/demo/assets/70317458/69a6b506-a898-4e6b-8412-0d714d8ae9d8)
 
