@@ -9,6 +9,7 @@
   * kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 - Download the latest Argo CD version from https://github.com/argoproj/argo-cd/releases/latest. More detailed installation instructions can be found via the CLI installation documentation.
+- Install the Kubernetes Metrics Server by running; kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
 # Steps
 1) Run argocd login localhost:8080 --insecure
