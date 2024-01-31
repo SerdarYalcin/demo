@@ -8,7 +8,7 @@
 These instructions will help you set up and run a copy of the project on your local machine for development and testing purposes. For a detailed explanation of how to deploy the infrastructure and application, refer to the documentation in each folder.
 
 
-#######KS Deployment##########
+#######EKS Deployment##########
 ![image](https://github.com/SerdarYalcin/demo/assets/70317458/9ef80b9e-0316-424a-a25a-f85603d959b7)
 
 #########Docker Image Build############
