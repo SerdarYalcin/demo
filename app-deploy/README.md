@@ -15,3 +15,5 @@
    - This is used to connect ArgoCD using CLI.
 2) Run argocd repo add https://github.com/SerdarYalcin/demo.git
    - This is used to add a GitHub repository, enabling us to deploy the application from it.
+3) Run kubectl apply -f argocd-app.yaml
+   - This is used for deploying the application to the EKS cluster.
