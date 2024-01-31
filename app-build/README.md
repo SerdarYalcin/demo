@@ -29,4 +29,4 @@ Consider using a more powerful build environment if your build times are longer 
 
 - Automated Testing: If not already implemented, integrate automated testing in your build process. This ensures that every build is tested and reduces the likelihood of bugs making it into production.
 
-- Monitoring and Alerts: Set up monitoring and alerts for your CI/CD pipeline. This includes monitoring the health of the CodeBuild process, the status of builds, and any failures.
+- Monitoring and Alerts: Set up monitoring and alerts for your CI pipeline. This includes monitoring the health of the CodeBuild process, the status of builds, and any failures.
