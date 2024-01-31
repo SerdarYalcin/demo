@@ -11,3 +11,7 @@
 - Download the latest Argo CD version from https://github.com/argoproj/argo-cd/releases/latest. More detailed installation instructions can be found via the CLI installation documentation.
 
 # Steps
+1) Run argocd login localhost:8080 --insecure
+   - This is used to connect ArgoCD using CLI.
+2) Run argocd repo add https://github.com/SerdarYalcin/demo.git
+   - This is used to add a GitHub repository, enabling us to deploy the application from it.
