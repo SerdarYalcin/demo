@@ -21,7 +21,7 @@
    - This is used for deploying the application to the EKS cluster.
   
  # Possible Improvements
-- Advanced Deployment Strategies: Implement Blue/Green or Canary deployments using Argo Rollouts for safer and more controlled updates.
+- Advanced Deployment Strategies: Configure sync policies, sync options, sync phases, and sync waves based on your deployment. Use applicationSet for multi-cluster deployment. Implement Blue/Green or Canary deployments using Argo Rollouts for safer and more controlled updates.
 - Enhanced Security Measures: Secure your cluster with Kubernetes Network Policies.
 - Resource Optimization and Autoscaling: Monitor and optimize costs, possibly using tools like Kubecost.
 - Disaster Recovery and Backup: Implement a robust backup strategy and regularly test your disaster recovery procedures.
