@@ -19,3 +19,12 @@
    - This is used to add a GitHub repository, enabling us to deploy the application from it.
 3) Run kubectl apply -f argocd-app.yaml
    - This is used for deploying the application to the EKS cluster.
+  
+ # Possible Improvements
+- Advanced Deployment Strategies: Implement Blue/Green or Canary deployments using Argo Rollouts for safer and more controlled updates.
+- Enhanced Security Measures: Secure your cluster with Kubernetes Network Policies.
+- Resource Optimization and Autoscaling: Monitor and optimize costs, possibly using tools like Kubecost.
+- Disaster Recovery and Backup: Implement a robust backup strategy and regularly test your disaster recovery procedures.
+- Secrets Management: Manage secrets securely using AWS Secrets Manager, AWS KMS.
+- High Availability: Ensure your  applications are configured for high availability, especially across multiple Availability Zones.
+- Robust Monitoring and Logging: Install the CloudWatch observability agent and ensure that your EKS cluster sends metrics, and logs to CloudWatch
