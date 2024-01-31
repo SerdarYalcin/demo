@@ -28,3 +28,4 @@
 - Secrets Management: Manage secrets securely using AWS Secrets Manager, AWS KMS.
 - High Availability: Ensure your  applications are configured for high availability, especially across multiple Availability Zones.
 - Robust Monitoring and Logging: Install the CloudWatch observability agent and ensure that your EKS cluster sends metrics, and logs to CloudWatch
+- Use an Elastic Load Balancer (ELB) instead of a NodePort service for a production environment to ensure enhanced scalability, reliability, and network performance.
