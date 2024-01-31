@@ -10,9 +10,8 @@ phases:
     commands:
       - echo "Building the Docker image..."
       - DOCKER_TAG=$(date +%Y%m%d%H%M%S)  # Generate a timestamp as a unique identifier
-      - docker build -t $ECR_REPOSITORY_NAME:$DOCKER_TAG .
-      - echo "Tagging the Docker image..."
-      - docker tag $ECR_REPOSITORY_NAME:$DOCKER_TAG $ECR_REGISTRY_URL/$ECR_REPOSITORY_NAME:$DOCKER_TAG
+      - echo "Building $ Tagging the Docker image..."
+      - docker build -t $ECR_REGISTRY_URL/$ECR_REPOSITORY_NAME:$DOCKER_TAG .
 
   post_build:
     commands:
