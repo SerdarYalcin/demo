@@ -25,7 +25,7 @@ export AWS_DEFAULT_REGION=<region> }
 - Once the process is complete, use AWS CLI or AWS Management Console to verify that the EKS cluster is up and running.
 
 5) Install Cluster Autoscaler
-- Run terraform output and get the ARN of the IAM Role created and replace it in cluster-autoscaler.yaml service account section appropriately.
+- Run terraform output and get the ARN of the IAM Role created and replace it in the service account section of the cluster-autoscaler.yaml. Finally run kubectl create -f cluster-autoscaler.yaml to install it.
 
 Post-Deployment
 - You can use "aws eks --region region-code update-kubeconfig --name cluster_name" to configure kubeconfig file so you can connect to the EKS cluster.
@@ -36,9 +36,10 @@ Review the Terraform plan output carefully to understand the changes that will b
 
 # Possible Improvements
 1) Advanced Networking: Consider using AWS Transit Gateway for simplified network architecture, especially if integrating with multiple VPCs or on-premises networks.
-Implement more granular network policies within Kubernetes to control pod-to-pod communication and enhance security.
+Implement more granular network policies within Kubernetes to control pod-to-pod communication and enhance security. Use intra-subnets for isolation of the control plane.
 2) Security Enhancements: Introduce additional IAM roles for different levels of access, ensuring adherence to the principle of least privilege.
 Integrate AWS Key Management Service (KMS) for encryption of data at rest within the EKS cluster.
-3) Cost Optimization: Review the instance types and sizes used in the node groups for potential optimization. Consider using a mix of On-Demand and Spot Instances for cost savings.
+3) Cost Optimization: Review the instance types and sizes used in the node groups for potential optimization. Consider using a mix of On-Demand and Spot Instances for cost savings. For long-term usage, consider buying savings plans or RIs.
 4) Logging and Monitoring: Enable control plane components logging. Install an observability agent to get logs, metrics, and traces(e.g Amazon CloudWatch Observability to get logs and metrics.)
 5) Storage Optimization: Evaluate the use of different storage classes in Kubernetes. For instance, you may consider Amazon EFS for persistent and shared storage requirements.
+6) Deployment Optimization: Use EKS Blueprints to install complete EKS clusters that are fully bootstrapped with the operational software that is needed to deploy and operate workloads.
