@@ -78,8 +78,8 @@ resource "aws_iam_role_policy" "codebuild_logging_policy" {
           "logs:PutLogEvents"
         ],
         Resource = [
-          "arn:aws:logs:us-east-1:055708565519:log-group:/aws/codebuild/demo",
-          "arn:aws:logs:us-east-1:055708565519:log-group:/aws/codebuild/demo:*"
+          "arn:aws:logs:us-east-1:0557xxxxxxxxxxx:log-group:/aws/codebuild/demo",   # Replace it with your AWS Account ID
+          "arn:aws:logs:us-east-1:0557xxxxxxxxxxx:log-group:/aws/codebuild/demo:*"  # Replace it with your AWS Account ID
         ]
       }
     ]
