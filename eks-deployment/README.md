@@ -43,3 +43,4 @@ Integrate AWS Key Management Service (KMS) for encryption of data at rest within
 4) Logging and Monitoring: Enable control plane components logging. Install an observability agent to get logs, metrics, and traces(e.g Amazon CloudWatch Observability to get logs and metrics.)
 5) Storage Optimization: Evaluate the use of different storage classes in Kubernetes. For instance, you may consider Amazon EFS for persistent and shared storage requirements.
 6) Deployment Optimization: Use EKS Blueprints to install complete EKS clusters that are fully bootstrapped with the operational software that is needed to deploy and operate workloads.
+7) Nodes Optimization: For appropriate workloads, consider using Fargate which is a technology that provides on-demand, right-sized compute capacity for containers. With Fargate, you don't have to provision, configure, or scale groups of virtual machines on your own to run containers. 
